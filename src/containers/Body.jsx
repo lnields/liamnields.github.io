@@ -27,12 +27,12 @@ function Body() {
 		<div style={style}>
 			<Section title="About Me">
 				<p>
-					{"I'm a software engineer intern at "}
+					{"I'm a software engineer at "}
 					<SmallLink href="https://sawgrassnutralabs.com/">
-						Sawgrass Nutra Labs
+						RF-SMART
 					</SmallLink>
 					{
-						' where I am building an inventory tracking system. I am also sudying computer science at the '
+						' where I am building mods for customers. I am also sudying computer science at the '
 					}{' '}
 					<SmallLink href="https://unf.edu">
 						University of North Florida
@@ -90,25 +90,49 @@ function Body() {
 						usage and garnered over 20 users.
 					</Project>
 				</Row>
+				<Row>
+					<Project
+						icon="https://www.onlinewebfonts.com/svg/img_345856.png"
+						title="Concurrent Video Stream"
+						stack={['React', 'Node.js', 'Socket.io']}
+						href="https://github.com/isaiahnields/danger.ai"
+					>
+						Built a concurrent video steaming web app using
+						React and socket.io. App create rooms where
+						users can concurrently stream youtube videos.
+						All users in the room can pause play and skip
+						and the video will automatically sync. Users
+						can also chat within the app with a built in
+						chat feature.
+					</Project>
+				</Row>
+				<Row>
+					<Project
+						icon="https://www.iconfinder.com/data/icons/business-flatcircle/512/strategy-512.png"
+						title="Inventory Tracker"
+						stack={['React', 'Node.js', 'MySQL']}
+						href="https://github.com/isaiahnields/danger.ai"
+					>
+						Worked at Sawgrass Nutra Labs, a contract manufacurer
+						for suplements, as a Machine Operator. After seeing
+						that they were tracking their inventory with Excel I
+						decided to build them a better system. I designed and 
+						built dashboard views for Sawgrass’s nutraceutical 
+						inventory tracking software. Deployed React frontend
+						code with AWS S3. Utilized Python AWS Lambda functions 
+						and MySQL to build out backend inventory tracking 
+						functionality. Added logging to the backend using AWS
+						CloudWatch and created reports on user behavior to 
+						drive product direction. Allowd Sawgrass to be 5% 
+						more eficient in there ordering completion process.
+						reduced inventory tracking error by over 13%
+					</Project>
+				</Row>
 			</Section>
 
 			<Section title="Experience">
 				<Tabs
 					jobs={[
-						{
-							company: 'Sawgrass Nutra Labs',
-							items: [
-								'Worked at Sawgrass Nutra Labs, a contract manufacurer for suplements, on the engineering team.',
-								'Designed and built dashboard views for Sawgrass’s nutraceutical inventory tracking software.',
-								'Deployed React frontend code with AWS S3.',
-								'Utilized Python AWS Lambda functions and MySQL to build out backend inventory tracking functionality.',
-								'Added logging to the backend using AWS CloudWatch and created reports on user behavior to drive product direction.',
-								'Allowd Sawgrass to be 5% more eficient in there ordering completion process.',
-								'reduced inventory tracking error by over 13%',
-							],
-							location: 'Jacksonville, FL',
-							date: 'Mar 2020 - Sept 2020',
-						},
 						{
 							company: 'Little Ceasars',
 							items: [
@@ -118,6 +142,37 @@ function Body() {
 							],
 							location: 'Jacksonville, FL',
 							date: 'Mar 2020 - Sept 2020',
+						},
+					      {
+							company: 'Sawgrass NutraLabs',
+							items: [
+								'Worked as a machine opporator in the wharehouse contributing to production.',
+								'While working I saw an opportunity to use what I had learned about software development to improve their buisness processes.',
+								'With a friend who is also studying computer science I built a web app that was able to keep better record of thier data.',
+								'Improved visibility into inventory and decreased the frequency whith which counts had to be done.',
+							],
+							location: 'Jacksonville, FL',
+							date: 'sept 2020 - Sept 2021',
+						},
+					      {
+							company: 'RF-SMART',
+							items: [
+								'Worked as a Software Engineering Intern building out an inventory reporting tool.',
+								'Helped increase customers visibility in to their inventory by doubleing the number of available reports.',
+								'Increased readability of existing code through a refactor, updateing the framework from  Vue2 to Vue3.',
+							],
+							location: 'Jacksonville, FL',
+							date: 'May 2022 - Aug 2022',
+						},
+					      {
+							company: 'RF-SMART',
+							items: [
+								'Working as a Software Engineering creating modifications for customers.',
+								'Helped increase customers visibility in to their inventory by doubleing the number of available reports.',
+								'Increased readability of existing code through a refactor, updateing the framework from  Vue2 to Vue3.',
+							],
+							location: 'Jacksonville, FL',
+							date: 'Aug 2022 - Present',
 						},
 					]}
 				/>
@@ -147,7 +202,7 @@ function Body() {
 					<Col xl={3} md={6} sm={6} xs={12}>
 						<List
 							title="Libraries"
-							items={['React', 'Node.js']}
+							items={['React', 'Node.js', 'Vue']}
 						/>
 					</Col>
 				</Row>
