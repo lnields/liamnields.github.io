@@ -13,6 +13,9 @@ import trophy from '../assets/trophy.png';
 import cloud from '../assets/cloud.png';
 import dance from '../assets/dance.png';
 import surfer from '../assets/surfer.png';
+import game from '../assets/game.png';
+import Inventory from '../assets/inventory.png';
+import onlineStreaming from '../assets/online-streaming.png';
 import books from '../assets/books.png';
 import face from '../assets/face.png';
 import roastBotLogo from '../assets/roast-bot-logo.png';
@@ -68,7 +71,6 @@ function Body() {
 						icon="https://cdn.onlinewebfonts.com/svg/img_447723.png"
 						title="Algorithms"
 						stack={['Python']}
-						href="https://github.com/isaiahnields/danger.ai"
 					>
 						Solved easy, medium and hard Leetcode and
 						AlgoExpert algorithms in Python. Competed in daily
@@ -77,10 +79,9 @@ function Body() {
 				</Row>
 				<Row>
 					<Project
-						icon="https://www.iconfinder.com/data/icons/business-flatcircle/512/strategy-512.png"
+						icon={game}
 						title="Web Tic-Tac-Toe"
 						stack={['React']}
-						href="https://github.com/isaiahnields/danger.ai"
 					>
 						Built a multiplayer Tic-Tac-Toe game using React.
 						App responds to user input, keeps track of users
@@ -92,10 +93,9 @@ function Body() {
 				</Row>
 				<Row>
 					<Project
-						icon="https://www.onlinewebfonts.com/svg/img_345856.png"
+						icon={onlineStreaming}
 						title="Concurrent Video Stream"
 						stack={['React', 'Node.js', 'Socket.io']}
-						href="https://github.com/isaiahnields/danger.ai"
 					>
 						Built a concurrent video steaming web app using
 						React and socket.io. App create rooms where
@@ -107,11 +107,13 @@ function Body() {
 					</Project>
 				</Row>
 				<Row>
+
+				<a href="https://iconscout.com/icons/inventory" target="_blank">Inventory Icon</a> by <a href="https://iconscout.com/contributors/ibm-design" target="_blank">IBM-Design</a>
+
 					<Project
-						icon="https://www.iconfinder.com/data/icons/business-flatcircle/512/strategy-512.png"
+						icon={Inventory}
 						title="Inventory Tracker"
 						stack={['React', 'Node.js', 'MySQL']}
-						href="https://github.com/isaiahnields/danger.ai"
 					>
 						Worked at Sawgrass Nutra Labs, a contract manufacurer
 						for suplements, as a Machine Operator. After seeing
